@@ -537,6 +537,8 @@
     @include order-range-label;
     overflow-y: auto;
     border-radius: 0 0 3px 3px;
+    scrollbar-width: thin;
+    scrollbar-color: #3E9CDC #3D4050;
     &::-webkit-scrollbar {
       width: 7px;
       border-radius: 3px;
@@ -549,6 +551,9 @@
     }
     &::-webkit-scrollbar-track-piece {
       border-radius: 3px;
+    }
+    &::-moz-scrollbar-thumb {
+      border-radius: 10px;
     }
   }
   &__option {
