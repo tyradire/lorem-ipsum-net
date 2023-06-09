@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.woff2") format('woff2'), 
+       url("../fonts/Lato-Regular.woff") format('woff'), 
+       url("../fonts/Lato-Regular.ttf") format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("../fonts/Lato-Semibold.woff2") format('woff2'), 
+       url("../fonts/Lato-Semibold.woff") format('woff'), 
+       url("../fonts/Lato-Semibold.ttf") format('ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.woff2") format('woff2'), 
+       url("../fonts/Lato-Bold.woff") format('woff'), 
+       url("../fonts/Lato-Bold.ttf") format('ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Lato-Extra-Bold';
+  src: url("../fonts/Lato-Extra-Bold.woff2") format('woff2'), 
+       url("../fonts/Lato-Extra-Bold.woff") format('woff'), 
+       url("../fonts/Lato-Extra-Bold.ttf") format('ttf');
+  font-weight: 800;
+}
