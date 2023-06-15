@@ -44,7 +44,7 @@
       margin-top: 16px;
     }
   }
-  &__payment-list {
+  &__list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -57,7 +57,7 @@
       margin-top: 10px;
     }
   }
-  &__payment-item {
+  &__item {
     margin-left: 38px;
     display: flex;
 
@@ -72,58 +72,7 @@
       }
     }
   }
-  &__contacts-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    border-left: 1px solid #C3C3C3;
-
-    @include breakpoint(sm) {
-      width: 300px;
-      justify-content: center;
-      border-left: none;
-    }
-  }
-  &__contacts-item {
-    margin-left: 38px;
-    display: flex;
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: #C3C3C3;
-    }
-
-    @include breakpoint(lg) {
-      margin-left: 14px;
-    }
-    @include breakpoint(sm) {
-      margin-left: 20px;
-
-      &:first-of-type {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-.payment {
-  &__option {
-    margin-left: 10px;
-    @include footer-text;
-    color: $text-footer;
-
-    @include breakpoint(sm) {
-      margin-left: 4px;
-    }
-
-    span {
-      text-transform: uppercase;
-    }
-  }
-}
-
-.contacts {
-  &__option {
+  &__link {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -134,11 +83,17 @@
       fill: $text-footer;
     }
   }
-  &__option-text {
+  &__text {
     margin-left: 10px;
+    @include footer-text;
+    color: $text-footer;
 
     @include breakpoint(sm) {
       margin-left: 4px;
+    }
+
+    span {
+      text-transform: uppercase;
     }
   }
 }

@@ -8,19 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Select input
   const selectSwitcher = document.getElementById('select');
-  const selectButton = document.querySelector('.select__button')
-  const options = document.querySelectorAll('.select__option');
+  const selectButton = document.querySelector('.form__button')
+  const options = document.querySelectorAll('.form__option');
   const formSelect = document.querySelector('.form__select');
-  const selectValue = document.querySelector('.select__button');
-  const selectCheckbox = document.querySelector('.select__input');
+  const selectValue = document.querySelector('.form__button');
+  const selectCheckbox = document.querySelector('.form__input');
 
   const openOptions = () => {
-    selectButton.classList.toggle('select__button_opened');
+    selectButton.classList.toggle('form__button_opened');
     formSelect.classList.toggle('form__select_opened');
   }
   const selectOption = (e) => {
     selectValue.textContent = e.currentTarget.textContent;
-    selectButton.classList.remove('select__button_opened');
+    selectButton.classList.remove('form__button_opened');
     formSelect.classList.remove('form__select_opened');
     selectCheckbox.checked = false;
   }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Submit input
-  const form = document.querySelector('.order__form');
+  const form = document.querySelector('.form');
 
   const testFunc = (e) => {
     e.preventDefault();
